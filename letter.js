@@ -6,7 +6,6 @@ class Letter {
         // A boolean value that stores whether that letter has been guessed yet
         this.guessed = false;
 
-
     }
     // A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
 
@@ -45,6 +44,9 @@ class Letter {
 // console.log(letter);
 
 // console.log(letter.guesses());
+// console.log(letter.check("c"));
+// console.log(letter.guesses());
 // console.log(letter.check("a"));
 // console.log(letter.guesses());
+// console.log(letter);
 module.exports = Letter;

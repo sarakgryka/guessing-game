@@ -15,7 +15,7 @@ let game = new Word(randomWord);
 console.log(game);
 // Prompts the user for each guess and keeps track of the user's remaining guesses
 
-
+// function askQuestions(){
 inquirer
     .prompt([{
 

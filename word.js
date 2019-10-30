@@ -1,17 +1,18 @@
-var Letter = require("./Letter.js");
-// An array of new Letter objects representing the letters of the underlying word
+var Letter = require("./letter.js");
+
 
 class Word {
 
     constructor(word) {
+        // An array of new Letter objects representing the letters of the underlying word
 
         this.wordArray = [];
 
         for (var i = 0; i < word.length; i++) {
 
-            var newWord = new Letter(word[i]);
+            var newLetters = new Letter(word[i]);
 
-            this.wordArray.push(newWord)
+            this.wordArray.push(newLetters)
 
         } }
 
@@ -51,7 +52,7 @@ class Word {
         }
     }
 
-    // var word = new Word("dog");
+    //  var word = new Word("dog");
     // console.log(word);
     // console.log(word.wordLetters());
     // console.log(word.checker("d"));
