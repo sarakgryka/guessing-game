@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sarakgryka/guessing-game/issues"
   },
-  "homepage": "https://github.com/sarakgryka/guessing-game#readme"
+  "homepage": "https://github.com/sarakgryka/guessing-game#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
 }
