@@ -17,8 +17,9 @@ class Letter {
         }
 
         else {
-
+           
             return "_";
+            
         }
 
     }
@@ -29,7 +30,15 @@ class Letter {
         if (guess === this.letter) {
 
             this.guessed = true;
+            console.log("");
+            console.log("CORRECT!");
+            console.log("");
+           
         }
+
+        
+
+     
 
 
     }

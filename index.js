@@ -34,6 +34,7 @@ function askQuestions() {
     if (game.displayArray.indexOf("_") === -1) {
 
         console.log("Good Job! You won that round!")
+        console.log("");
         startGame();
        
         
@@ -54,6 +55,10 @@ function askQuestions() {
             .then(answers => {
 
                 game.checker(answers.letterGuess);
+
+                
+
+                
                
                 askQuestions();
             })

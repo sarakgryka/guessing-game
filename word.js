@@ -32,6 +32,7 @@ class Word {
             }
 
             console.log(this.displayArray);
+            console.log("");
         }
 
      
@@ -42,12 +43,16 @@ class Word {
 
             for (var i = 0; i < this.wordArray.length; i++) {
 
-                this.wordArray[i].check(guessedLet)
-
+                this.wordArray[i].check(guessedLet);
+            
+               
 
             }
 
+            // if (guessedLet !== this.wordArray && guess !== this.letter){
 
+            //     console.log("no")
+            // }
 
         }
     }
