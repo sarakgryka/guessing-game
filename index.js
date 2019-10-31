@@ -10,36 +10,37 @@ let randomWord = wordChoices[Math.floor(Math.random() * wordChoices.length)];
 let game = new Word(randomWord);
 
 
+askQuestions();
+function startGame (){
 
-// function startGame (){
-
-// let randomWord = wordChoices[Math.floor(Math.random() * wordChoices.length)];
-// let game = new Word(randomWord);
-
-
+let randomWord = wordChoices[Math.floor(Math.random() * wordChoices.length)];
+game = new Word(randomWord);
+// game.wordLetters();
+askQuestions();
 //  console.log(randomWord);
  
-     askQuestions();
+     
  
  
  
 
-// }
+}
 // console.log(game);
 // Prompts the user for each guess and keeps track of the user's remaining guesses
 
 
 function askQuestions() {
-    game.wordLetters();
+   game.wordLetters();
     if (game.displayArray.indexOf("_") === -1) {
 
-        console.log("Good Job!")
-        // startGame();
+        console.log("Good Job! You won that round!")
+        startGame();
        
         
         
     }
     else {
+       
         inquirer
             .prompt([{
 
